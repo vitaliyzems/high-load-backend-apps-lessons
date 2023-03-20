@@ -1,0 +1,14 @@
+{
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "postgres",
+  "password": "12345",
+  "database": "nestJS-news-blog",
+  "entities": ["apps/api/**/*.entity.js"],
+  "migrations": ["apps/api/src/migrations/*"],
+  "synchronize": true,
+  "cli": {
+    "migrationsDir": "apps/api/src/migrations"
+  }
+}
