@@ -1,7 +1,13 @@
-/* eslint-disable @typescript-eslint/no-empty-function */
-import { Controller } from '@nestjs/common';
+import { Controller, Get } from '@nestjs/common';
+
+import { AppService } from './app.service';
 
 @Controller()
 export class AppController {
-  constructor() { }
+  constructor(private readonly appService: AppService) {}
+
+  @Get()
+  getData() {
+    return this.appService.getData();
+  }
 }

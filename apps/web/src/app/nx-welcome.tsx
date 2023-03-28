@@ -532,7 +532,7 @@ export function NxWelcome({ title }: { title: string }) {
                 </svg>
               </a>
               <a
-                href="https://www.youtube.com/@NxDevtools/videos?utm_source=nx-project&sub_confirmation=1"
+                href="https://www.youtube.com/c/Nrwl_io/videos?utm_source=nx-project&sub_confirmation=1"
                 target="_blank"
                 rel="noreferrer"
                 className="list-item-link"
@@ -565,7 +565,7 @@ export function NxWelcome({ title }: { title: string }) {
                 </svg>
               </a>
               <a
-                href="https://nx.dev/react-tutorial/1-code-generation?utm_source=nx-project"
+                href="https://nx.dev/tutorial/01-create-application?utm_source=nx-project"
                 target="_blank"
                 rel="noreferrer"
                 className="list-item-link"
@@ -743,9 +743,9 @@ export function NxWelcome({ title }: { title: string }) {
               </summary>
               <pre>
                 <span># Generate UI lib</span>
-                nx g @nrwl/react:lib ui
+                nx g @nrwl/angular:lib ui
                 <span># Add a component</span>
-                nx g @nrwl/react:component button --project ui
+                nx g @nrwl/angular:component button --project ui
               </pre>
             </details>
             <details>
@@ -763,9 +763,9 @@ export function NxWelcome({ title }: { title: string }) {
                     d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
                   />
                 </svg>
-                View interactive project graph
+                View interactive dependency graph
               </summary>
-              <pre>nx graph</pre>
+              <pre>nx dep-graph</pre>
             </details>
             <details>
               <summary>
@@ -786,7 +786,7 @@ export function NxWelcome({ title }: { title: string }) {
               </summary>
               <pre>
                 <span># see what&apos;s been affected by changes</span>
-                nx affected:graph
+                nx affected:dep-graph
                 <span># run tests for current changes</span>
                 nx affected:test
                 <span># run e2e tests for current changes</span>
